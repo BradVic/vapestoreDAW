@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <jsp-config>
+        <jsp-property-group>
+            <description>header and footer</description>
+            <display-name>encabezado shop</display-name>
+            <url-pattern>/WEB-INF/views/shop/*</url-pattern>
+            <include-prelude>/WEB-INF/include/store/header.jspf</include-prelude>
+            <include-coda>/WEB-INF/include/store/footer.jspf</include-coda>
+        </jsp-property-group>
+    
+        <jsp-property-group>
+            <description>header and footer a</description>
+            <display-name>encabezado log</display-name>
+            <url-pattern>/WEB-INF/views/log/*</url-pattern>
+            <include-prelude>/WEB-INF/include/log/header.jspf</include-prelude>
+            <include-coda>/WEB-INF/include/log/footer.jspf</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>
